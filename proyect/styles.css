@@ -1,0 +1,96 @@
+/* General */
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.795), rgba(36, 143, 41, 0.904));
+    color: white;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #00FFFF; /* Azul cian */
+    font-size: 4rem;
+    font-family: 'Bangers', sans-serif;
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 204, 255, 0.8);
+    margin: 20px;
+}
+
+/* Contenedor de la página */
+.container-form {
+    text-align: center;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 204, 255, 0.8);
+}
+
+/* Estilos del formulario */
+.input-field {
+    margin: 10px;
+    padding: 12px;
+    width: 80%;
+    border-radius: 5px;
+    border: 2px solid #00FF00; /* Verde brillante */
+    background: transparent;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.input-field::placeholder {
+    color: #00FF00;
+}
+
+/* Estilos de las imágenes */
+.image-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.decorative-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.8);
+    border: 5px solid #00FF00; /* Verde brillante */
+    transition: all 0.3s ease;
+}
+
+.decorative-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 204, 255, 1);
+}
+
+/* Estilos para los botones sí/no */
+.yes-no {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Botón de envío del formulario */
+.submit-button {
+    background: linear-gradient(45deg, #00FFFF, #00FF00); /* Azul y verde */
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-family: 'Russo One', sans-serif;
+}
+
+.submit-button:hover {
+    background: linear-gradient(45deg, #00FF00, #00FFFF); /* Azul y verde invertidos */
+    transform: scale(1.1);
+}

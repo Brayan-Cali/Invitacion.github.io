@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Confirmación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Bangers&family=Russo+One&family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Solo un archivo CSS -->
+</head>
+<body>
+
+    <div class="container-form">
+        <h1>Confirma tu Asistencia</h1>
+
+        <!-- Más imágenes decorativas -->
+        <div class="image-gallery">
+            <img src="img/Green Black Modern Welcome To My Channel Mobile Video (146 x 83 px).gif" alt="Imagen 1" class="image">
+           
+        </div>
+
+        <form action="enviar.php" method="POST">
+            <input type="text" name="nombre" class="input-field" placeholder="Nombre" required>
+            <input type="text" name="apellido" class="input-field" placeholder="Apellido" required>
+            
+            <input type="text" name="comida" class="input-field" placeholder="¿Qué tipo de comida prefieres?" required>
+            <input type="text" name="bebida" class="input-field" placeholder="¿Qué tipo de bebida prefieres?" required>
+            
+            <div class="yes-no">
+                <label for="asistencia">¿Vas a asistir?</label>
+                <input type="radio" name="asistencia" value="si" required> Sí
+                <input type="radio" name="asistencia" value="no"> No
+            </div>
+            
+            <button type="submit" class="submit-button">Confirmar Asistencia</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
